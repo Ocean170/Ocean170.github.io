@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Portfolio Website </title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bootstrap 4 Portfolio/Resume Theme for Developers">
+    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
+    <link rel="shortcut icon" href="favicon.ico">  
+    
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> 
+    
+    <!-- FontAwesome JS -->
+    <script defer src="assets/fontawesome/js/all.js"></script>
+    
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
+    
+    <!-- github calendar css -->
+    <link rel="stylesheet" href="assets/plugins/github-calendar/dist/github-calendar.css">
+    <!-- github activity css -->    
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+    <link rel="stylesheet" href="assets/plugins/github-activity/github-activity-0.1.5.min.css">
+    
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+    
+</head> 
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container */
+.container {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: black;
+  font-size: 35px;
+  cursor: pointer;
+}
+	</style>
+
+<body>
+<div style="text-align:center">
+  <h2>Inventory Management System Pictures Preview</h2>
+  <p>Click on the images below:</p>
+  <b> The information displayed below is strictly false data. </b>
+</div>
+<!-- The four columns -->
+<div class="row">
+  <div class="column">
+    <img src="assets/images/projects/diving 1.png" alt="Diving image 1" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="assets/images/projects/diving 2.png" alt="Diving image 2" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="assets/images/projects/diving 3.png" alt="Diving image 3" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="assets/images/projects/diving 4.png" alt="Diving image 4" style="width:100%" onclick="myFunction(this);">
+  </div>
+</div>
+
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>
+
+<script>
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
+</script>
+
+<section class="latest section">
+                    <div class="section-inner">
+                        <div class="content">    
+					     <div class="desc text-left">                                    
+                                    <p> The Fuctionality that was created for the E-Commerce Website is as Listed below:-
+										<p> Administrator's Dashboard:- </p>
+											<li>Login / Logout
+											<li>Create another Administrator's Account
+											<li>View Purchases Made (And Details of Purchases such as prices, product purchased etc)
+											<li>View All Brands
+											<li>View Total Value of Orders (As well as seperate displays for cash and credit)
+											<li>Add a product to the website.
+											<li>Edit any product info.
+											<li>The Administrator was able to view all current members, update member info or delete.
+											<li>The Administrator was allowed to delete any products as well as customers from the database.
+									</p>
+												<p> Customer View:- </p>
+													<li>Login / Logout
+													<li>View Listed Products.
+													<li>Create An Account.
+													<li>Change Password.
+													<li>Add a Product to cart (This action was only allowed if the user has an account)
+													<li>Change the number of items a user wants to purchase (When adding a product, by default it would only be 1 of that item)
+									</p>					
+                                </div><!--//desc-->   								
+                            </div><!--//item-->					
+                    </div><!--//section-inner-->                
+                </section><!--//section-->
+
+
+</body>
+
